@@ -26,6 +26,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
           src={heroVideo}
         />
         <div

@@ -17,7 +17,7 @@ export function BrandStatement() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {
@@ -28,7 +28,7 @@ export function BrandStatement() {
   }, [hasAnimated]);
 
   const animateCount = (target: number, setter: (value: number) => void) => {
-    const duration = 2000;
+    const duration = 1200;
     const startTime = performance.now();
 
     const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);

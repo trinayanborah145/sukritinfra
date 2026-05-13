@@ -162,9 +162,10 @@ export function Navbar() {
 
       {/* Mobile overlay */}
       <div
-        className={`fixed inset-0 z-50 bg-[var(--charcoal)] transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] ${
+        className={`fixed inset-0 bg-[var(--charcoal)] transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{ zIndex: 100000 }}
       >
         <div className="flex justify-between items-center px-6 h-[84px]">
           <span className="font-display text-white uppercase text-[16px]" style={{ letterSpacing: "0.16em" }}>

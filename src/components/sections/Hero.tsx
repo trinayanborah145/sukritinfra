@@ -18,9 +18,10 @@ export function Hero() {
               width: 'max(100vw, 177.78vh)',
               height: 'max(100vh, 56.25vw)',
               minWidth: '100%',
-              minHeight: '100%'
+              minHeight: '100%',
+              pointerEvents: 'none'
             }}
-            src="https://www.youtube.com/embed/QURvgXoaIxM?autoplay=1&mute=1&loop=1&playlist=QURvgXoaIxM&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
+            src="https://www.youtube.com/embed/QURvgXoaIxM?autoplay=1&mute=1&loop=1&playlist=QURvgXoaIxM&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&vq=hd1080&hd=1&disablekb=1&fs=0&autohide=1"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

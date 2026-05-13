@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Volume2, VolumeX } from "lucide-react";
+import { Volume2, VolumeX, Mic, MicOff } from "lucide-react";
 
 const videos = [
   {
@@ -300,10 +300,13 @@ export function WorkInMotion() {
                       e.stopPropagation();
                       setIsMuted(!isMuted);
                     }}
-                    className="absolute top-4 right-4 z-20 w-8 h-8 flex items-center justify-center bg-black/40 hover:bg-black/60 rounded-full text-white transition-colors backdrop-blur-sm"
+                    className="absolute top-4 right-4 z-20 h-10 px-4 flex items-center gap-2 bg-black/60 hover:bg-black/80 rounded-full text-white transition-all backdrop-blur-md border border-white/20"
                     aria-label={isMuted ? "Unmute video" : "Mute video"}
                   >
-                    {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
+                    {isMuted ? <MicOff size={18} /> : <Mic size={18} />}
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                      {isMuted ? "Sound Off" : "Sound On"}
+                    </span>
                   </button>
                   <div className="relative p-5">
                     <div className="flex justify-between items-start mb-3">

@@ -300,11 +300,15 @@ export function WorkInMotion() {
                       e.stopPropagation();
                       setIsMuted(!isMuted);
                     }}
-                    className="absolute top-4 right-4 z-20 h-10 px-4 flex items-center gap-2 bg-black/60 hover:bg-black/80 rounded-full text-white transition-all backdrop-blur-md border border-white/20"
+                    className="absolute top-6 right-6 z-[100] h-12 px-5 flex items-center gap-3 bg-white text-black hover:bg-[#B8963E] hover:text-white rounded-full transition-all duration-300 shadow-2xl"
+                    style={{ 
+                      fontFamily: 'DM Sans, sans-serif',
+                      boxShadow: '0 10px 30px rgba(0,0,0,0.5)' 
+                    }}
                     aria-label={isMuted ? "Unmute video" : "Mute video"}
                   >
-                    {isMuted ? <MicOff size={18} /> : <Mic size={18} />}
-                    <span className="text-[10px] uppercase tracking-[0.2em] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                    {isMuted ? <MicOff size={20} strokeWidth={2.5} /> : <Mic size={20} strokeWidth={2.5} />}
+                    <span className="text-[11px] uppercase tracking-[0.15em] font-bold">
                       {isMuted ? "Sound Off" : "Sound On"}
                     </span>
                   </button>

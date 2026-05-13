@@ -7,14 +7,6 @@ export function Hero() {
 
   useEffect(() => {
     setLoaded(true);
-    const onScroll = () => {
-      if (bgRef.current) {
-        const y = window.scrollY * 0.4;
-        bgRef.current.style.transform = `translate3d(0, ${y}px, 0)`;
-      }
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -27,7 +19,6 @@ export function Hero() {
           loop
           playsInline
           poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
-          preload="auto"
           src={heroVideo}
         />
         <div

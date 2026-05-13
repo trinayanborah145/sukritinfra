@@ -10,14 +10,15 @@ export function Hero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden bg-[var(--charcoal)]">
-      <div ref={bgRef} className="absolute inset-0 will-change-transform">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div ref={bgRef} className="absolute inset-0">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <iframe
-            className="absolute top-1/2 left-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2"
-            src="https://www.youtube.com/embed/QURvgXoaIxM?autoplay=1&mute=1&controls=0&loop=1&playlist=QURvgXoaIxM&playsinline=1&showinfo=0&rel=0&si=E7R8VC7hFCK-0eYu"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115vw] h-[115vh] min-w-full min-h-full"
+            src="https://www.youtube.com/embed/QURvgXoaIxM?autoplay=1&mute=1&loop=1&playlist=QURvgXoaIxM&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
         <div

@@ -145,13 +145,18 @@ export function Navbar() {
             </Link>
           </nav>
 
-          <button
-            onClick={() => setOpen(true)}
-            className={`lg:hidden ${scrolled ? "text-[var(--text-soft)]" : "text-white"}`}
-            aria-label="Open menu"
-          >
-            <Menu size={24} />
-          </button>
+          <div className="flex items-center lg:hidden">
+            <button
+              onClick={() => setOpen(true)}
+              className={`p-2 -mr-2 flex items-center justify-center transition-all ${
+                scrolled ? "text-[var(--text-soft)]" : "text-white"
+              }`}
+              aria-label="Open menu"
+              style={{ zIndex: 10001 }}
+            >
+              <Menu size={30} strokeWidth={1.5} />
+            </button>
+          </div>
         </div>
       </header>
 

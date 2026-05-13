@@ -13,7 +13,13 @@ export function Hero() {
       <div ref={bgRef} className="absolute inset-0">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <iframe
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115vw] h-[115vh] min-w-full min-h-full"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            style={{
+              width: 'max(100vw, 177.78vh)',
+              height: 'max(100vh, 56.25vw)',
+              minWidth: '100%',
+              minHeight: '100%'
+            }}
             src="https://www.youtube.com/embed/QURvgXoaIxM?autoplay=1&mute=1&loop=1&playlist=QURvgXoaIxM&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
             title="YouTube video player"
             frameBorder="0"

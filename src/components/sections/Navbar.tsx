@@ -85,12 +85,13 @@ export function Navbar() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 h-[84px] flex items-center justify-between">
           <Link
             to="/"
-            className={`font-display uppercase text-[16px] lg:text-[18px] font-medium transition-colors ${
+            className={`font-display uppercase text-[14px] sm:text-[16px] lg:text-[18px] font-medium transition-colors ${
               isProjectsMenuOpen ? "text-white" : scrolled ? "text-[var(--text-soft)]" : "text-white"
             }`}
-            style={{ letterSpacing: "0.16em" }}
+            style={{ letterSpacing: "0.16em", flexShrink: 1, minWidth: 0 }}
           >
-            Sukrit Infrastructure
+            <span className="hidden sm:inline">Sukrit Infrastructure</span>
+            <span className="sm:hidden">Sukrit</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">

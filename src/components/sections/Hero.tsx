@@ -26,6 +26,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
           preload="auto"
           src={heroVideo}
         />
